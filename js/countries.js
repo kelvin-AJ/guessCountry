@@ -180,6 +180,9 @@ const countries = {
     ],
     getCountry : function(){
         return this.countriesList[Math.floor(Math.random()*this.countriesList.length)];
+    },
+    getCountries : function(){
+        return this.countriesList
     }
 }
 

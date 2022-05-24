@@ -11,12 +11,13 @@ const progessBar = document.querySelector(".bar");
 const message = document.querySelector(".message");
 const again = document.querySelector("#again");
 const main = document.querySelector(".game-main");
-const end = document.querySelector(".end")
+const end = document.querySelector(".end");
 
 // DRY functions
 
 async function country() {
-    return await countries.getCountry();
+    const countriesList = countries.getCountries();
+    return await countriesList[Math.floor(Math.random()*countriesList.length)];
 };
 function hide(element) {
     element.classList.add("hide");
