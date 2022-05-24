@@ -79,3 +79,13 @@ button:hover{
 .incomplete{
     background: rgba(240, 0, 0, 0.685);
 }
+@media screen and (max-width: 500px){
+    button:hover{
+        padding: 1rem;
+        background-color: white;
+    }
+    button:active{
+        background-color: rgba(250, 235, 215, 0.308);
+        padding: 1.3rem;
+    }
+}
