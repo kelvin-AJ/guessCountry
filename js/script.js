@@ -1,5 +1,4 @@
 import countries from "./countries.js";
-"use strict"
 
 // DOM Elements
 const flag = document.querySelector("#flag");
@@ -12,12 +11,15 @@ const message = document.querySelector(".message");
 const again = document.querySelector("#again");
 const main = document.querySelector(".game-main");
 const end = document.querySelector(".end");
+const hardBtn = document.querySelector(".hard");
+const easyBtn = document.querySelector(".easy");
+const body = document.querySelector("#content")
 
 // DRY functions
 
-async function country() {
+function country() {
     const countriesList = countries.getCountries();
-    return await countriesList[Math.floor(Math.random()*countriesList.length)];
+    return countriesList[Math.floor(Math.random()*countriesList.length)];
 };
 function hide(element) {
     element.classList.add("hide");
@@ -25,17 +27,36 @@ function hide(element) {
 function show(element) {
     element.classList.remove("hide") ;
 }
+let increment = 20;
+let reduction = 5;
+let progess = 10;
+let time = 60;
+
+// Difficulty
+hardBtn.addEventListener("click", function(){
+    increment = 7;
+    reduction = 5;
+    main.classList.add("hard-game");
+    progess = 0;
+    time = 50;
+    outputs()   
+});
+easyBtn.addEventListener("click", function(){
+    increment = 20;
+    reduction = 5;
+    main.classList.remove("hard-game");
+    outputs()   
+});
 
 // Init Variables
 let correctCountry;
 let wrongCountry;
-let time = 60;
 let paused = false;
 
 
 
 // Do Outputs
-async function outputs() {
+function outputs() {
     // Resets
     timer.style.color = "rgb(13, 156, 13)"
     show(flag);
@@ -52,11 +73,11 @@ async function outputs() {
 
 
     // AWAIT
-    correctCountry = await country();
+    correctCountry = country();
     flag.setAttribute("src", `images/${correctCountry[1]}.png`);
-    wrongCountry = await country();
+    wrongCountry = country();
       if(wrongCountry == correctCountry){
-        wrongCountry = await country();
+        wrongCountry = country();
       } ;
 
 
@@ -75,7 +96,6 @@ async function outputs() {
 // GAME DIRECTOR
 async function game(){
     // Init variable(s)
-    let progess = 10;
     progessBar.style.width = `${progess}%`;
 
     // TIME INTERVALS
@@ -117,9 +137,9 @@ async function game(){
     const validateOption = (option) => {
         option.addEventListener("click", function(){
             if(option.textContent == correctCountry[0]){
-                progess += 20;
+                progess += increment;
             }else{
-                progess -= 5;
+                progess -= reduction;
             }
             outputs();
             if(progess >= 100){

@@ -1,8 +1,8 @@
-body{
-    background: linear-gradient(rgb(82, 162, 228), rgb(33, 36, 41));
+body{background: linear-gradient(rgb(82, 162, 228), rgb(33, 36, 41));
     min-height: 100vh;
     margin: 0%;
 }
+
 header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -14,9 +14,14 @@ header{
 h1{
     margin: 0%;
 }
+.game-switch{
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 20px;
+}
 main{
     margin-top: 2rem;
 }
+
 .game-main{
     display: grid;
     justify-items:center ;
@@ -89,4 +94,9 @@ button:hover{
         background-color: rgba(250, 235, 215, 0.308);
         padding: 1.3rem;
     }
+}
+
+.hard-game{
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 1px;
 }

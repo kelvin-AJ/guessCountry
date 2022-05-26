@@ -6,7 +6,7 @@ const countries = {
         ["Andorra", "andorra"],
         ["Angola", "angola"],
         ["Antigua and Barbuda", "antiguaAndBarbuda"],
-        ["Argentina", "argentina"]
+        ["Argentina", "argentina"],
         ["Armenia", "armenia"],
         ["Australia", "australia"],
         ["Austria", "austria"],
@@ -19,7 +19,7 @@ const countries = {
         ["Belgium", "belgium"],
         ["Belize", "belize"],
         ["Benin", "benin"],
-        ["Bhutan", "bhutan"]
+        ["Bhutan", "bhutan"],
         ["Bosnia and Herzegovina", "bosniaAndHerzegovina"],
         ["Botswana", "botswana"],
         ["Brazil", "brazil"],
@@ -27,7 +27,7 @@ const countries = {
         ["Bulgaria", "bulgaria"],
         ["Burkina Faso", "burkinaFaso"],
         ["Burundi", "burundi"],
-        ["Cabo Verde", "caboVerde"]
+        ["Cabo Verde", "caboVerde"],
         ["Cambodia", "cambodia"],
         ["Cameroon", "cameroon"],
         ["Canada", "canada"],
@@ -35,14 +35,14 @@ const countries = {
         ["Chad", "chad"],
         ["China", "china"],
         ["Colombia", "colombia"],
-        ["Costa Rica", "costaRica"]
+        ["Costa Rica", "costaRica"],
         ["Cote d'Ivoir", "coteDivoir"],
         ["Cuba", "cuba"],
         ["Cyprus", "cyprus"],
         ["Czechia", "czechia"],
         ["Denmark", "denmark"],
         ["Djibouti", "djibouti"],
-        ["Dominican Republic", "dominicanRepublic"]
+        ["Dominican Republic", "dominicanRepublic"],
         ["Dominica", "dominica"],
         ["DPRK", "DPRK"],
         ["DRC", "DRC"],
@@ -96,7 +96,7 @@ const countries = {
         ["Maldives", "maldives"],
         ["Maldova", "maldova"],
         ["Mali", "mali"],
-        ["Malta", "malta"]
+        ["Malta", "malta"],
         ["Marshall Islands", "marshallIslands"],
         ["Mauritania", "mauritania"],
         ["Mexico", "mexico"],
@@ -134,7 +134,7 @@ const countries = {
         ["st. Lucia", "saintLucia"],
         ["Samoa", "samoa"],
         ["San Marino", "sanMarino"],
-        ["Sao Tome and Principe", "saoTomeAndPrincipe"]
+        ["Sao Tome and Principe", "saoTomeAndPrincipe"],
         ["Saudi Arabia", "saudiArabia"],
         ["Senegal", "senegal"],
         ["Seychelles", "seychelles"],
